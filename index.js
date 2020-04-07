@@ -1,4 +1,6 @@
-// since we are requiring the top level of faker, load all locales by default
-var Faker = require('./lib');
-var faker = new Faker({ locales: require('./lib/locales') });
-module['exports'] = faker;
+var job = {};
+module["exports"] = job;
+job.company_name = require("./company_name");
+job.designation = require("./designation");
+job.ctc = require("./ctc");
+job.job_location = require("./job_location");
